@@ -1,7 +1,6 @@
 {
   "» TEMPLATE": "lesson-template",
-  "» INTRO: GLSL SYNTAX": "lesson-0",
-  "» INTRO: DATA TYPES": "lesson-1",
+  "» INTRO: HELLO GLSL": "lesson-0",
   "» INTRO: CONTROL FLOW": "lesson-2",
   "» FRAGMENT SHADERS: BASICS": "frag-0",
   "» FRAGMENT SHADERS: UNIFORMS AND TEXTURES": "frag-1",

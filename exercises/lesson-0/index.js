@@ -82,11 +82,7 @@ var expectedShader = createShader({
   , vert: './shaders/expected.vert'
 })(gl)
 
-
-var camera
-
 function render() {
-  camera = getCamera()
   comparison.run()
   comparison.render()
 }
@@ -113,6 +109,7 @@ function getCamera() {
 }
 
 function actual(fbo) {
+  var camera = getCamera()
   fbo.shape = [canvas.height, canvas.width]
   fbo.bind()
   gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT)
@@ -126,6 +123,7 @@ function actual(fbo) {
 }
 
 function expected(fbo) {
+  var camera = getCamera()
   fbo.shape = [canvas.height, canvas.width]
   fbo.bind()
   gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT)
